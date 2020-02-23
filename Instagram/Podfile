@@ -7,5 +7,6 @@ target 'Instagram' do
 
   # Pods for Instagram
   pod 'ACKLocalization', '~> 0.1'
-  
+  pod 'SwiftGen', '~> 6.0'
+
 end

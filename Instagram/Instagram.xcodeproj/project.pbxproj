@@ -28,6 +28,7 @@
 		884C7E8524028AAE00BA95E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884C7E8424028AAE00BA95E3 /* Assets.xcassets */; };
 		884C7E8824028AAE00BA95E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884C7E8624028AAE00BA95E3 /* LaunchScreen.storyboard */; };
 		884C7E912402ED9800BA95E3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 884C7E932402ED9800BA95E3 /* Localizable.strings */; };
+		884C7E9D24031F5500BA95E3 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884C7E9C24031F5500BA95E3 /* Strings.swift */; };
 		B4F8F4AA6475F560162D102A /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E78385EC16F3B0C73823CD /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		884C7E8924028AAE00BA95E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		884C7E922402ED9800BA95E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		884C7E942402EDAD00BA95E3 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		884C7E9C24031F5500BA95E3 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		A4E78385EC16F3B0C73823CD /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 		884C7E7A24028AAB00BA95E3 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				884C7E9A24031E4600BA95E3 /* Generated */,
 				884C7E7B24028AAB00BA95E3 /* AppDelegate.swift */,
 				884C7E7D24028AAB00BA95E3 /* SceneDelegate.swift */,
 				884C7E7F24028AAB00BA95E3 /* ViewController.swift */,
@@ -109,6 +112,14 @@
 			path = Instagram;
 			sourceTree = "<group>";
 		};
+		884C7E9A24031E4600BA95E3 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				884C7E9C24031F5500BA95E3 /* Strings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,6 +128,7 @@
 			buildConfigurationList = 884C7E8C24028AAE00BA95E3 /* Build configuration list for PBXNativeTarget "Instagram" */;
 			buildPhases = (
 				FB4CFB436DE1369CCD8A2A88 /* [CP] Check Pods Manifest.lock */,
+				884C7E9B24031E7600BA95E3 /* SwiftGen */,
 				884C7E7424028AAB00BA95E3 /* Sources */,
 				884C7E7524028AAB00BA95E3 /* Frameworks */,
 				884C7E7624028AAB00BA95E3 /* Resources */,
@@ -201,6 +213,27 @@
 			shellPath = /bin/sh;
 			shellScript = "# Download from spreadsheet\n# https://docs.google.com/spreadsheets/d/1iMQP3Fe0N5IpODQyCCbjKq0kRxyY5pAvKYkd4Uhr6J0/edit?usp=sharing\n\n\"$PROJECT_DIR/Pods/ACKLocalization/Localization\" \"1vQXEwgCxAE9w9R6fyyNjh7dGyo0O_9Kf7lm6iFK5LCaDRrI6rUdQzYsq-H0F4n2ZHZPVu3C-jlmAkc3\" \"key_ios\" '{\"EN\": \"en\", \"CS\": \"cs\"}' \"$PROJECT_DIR/Instagram\" \"Localizable.strings\"\n";
 		};
+		884C7E9B24031E7600BA95E3 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/Instagram/en.lproj/Localizable.strings",
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(PROJECT_DIR)/Instagram/Generated/Strings.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen strings -t structured-swift4 ${SCRIPT_INPUT_FILE_0} -o ${SCRIPT_OUTPUT_FILE_0}\n";
+			showEnvVarsInLog = 0;
+		};
 		FB4CFB436DE1369CCD8A2A88 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +265,7 @@
 			files = (
 				884C7E8024028AAB00BA95E3 /* ViewController.swift in Sources */,
 				884C7E7C24028AAB00BA95E3 /* AppDelegate.swift in Sources */,
+				884C7E9D24031F5500BA95E3 /* Strings.swift in Sources */,
 				884C7E7E24028AAB00BA95E3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
