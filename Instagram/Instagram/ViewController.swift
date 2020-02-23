@@ -19,8 +19,8 @@ class ViewController: UIViewController {
         
         if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,
             let buildNumber = Bundle.main.infoDictionary?["CFBundleVersion"] as? String {
-            versionLabel.text = "Version: \(version)"
-            buildNumberLabel.text = "Build number: \(buildNumber)"
+            versionLabel.text = String(format: NSLocalizedString("main.versionLabel", comment: ""), version)
+            buildNumberLabel.text = String(format: NSLocalizedString("main.buildNumberLabel", comment: ""), buildNumber)
         }
     }
 

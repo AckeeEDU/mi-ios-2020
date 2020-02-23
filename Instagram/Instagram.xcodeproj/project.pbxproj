@@ -13,6 +13,7 @@
 		884C7E8324028AAB00BA95E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884C7E8124028AAB00BA95E3 /* Main.storyboard */; };
 		884C7E8524028AAE00BA95E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884C7E8424028AAE00BA95E3 /* Assets.xcassets */; };
 		884C7E8824028AAE00BA95E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884C7E8624028AAE00BA95E3 /* LaunchScreen.storyboard */; };
+		884C7E912402ED9800BA95E3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 884C7E932402ED9800BA95E3 /* Localizable.strings */; };
 		B4F8F4AA6475F560162D102A /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E78385EC16F3B0C73823CD /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,8 @@
 		884C7E8424028AAE00BA95E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		884C7E8724028AAE00BA95E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		884C7E8924028AAE00BA95E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		884C7E922402ED9800BA95E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		884C7E942402EDAD00BA95E3 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A4E78385EC16F3B0C73823CD /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,6 +90,7 @@
 				884C7E8424028AAE00BA95E3 /* Assets.xcassets */,
 				884C7E8624028AAE00BA95E3 /* LaunchScreen.storyboard */,
 				884C7E8924028AAE00BA95E3 /* Info.plist */,
+				884C7E932402ED9800BA95E3 /* Localizable.strings */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -134,6 +138,7 @@
 			knownRegions = (
 				en,
 				Base,
+				cs,
 			);
 			mainGroup = 884C7E6F24028AAA00BA95E3;
 			productRefGroup = 884C7E7924028AAB00BA95E3 /* Products */;
@@ -151,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				884C7E8824028AAE00BA95E3 /* LaunchScreen.storyboard in Resources */,
+				884C7E912402ED9800BA95E3 /* Localizable.strings in Resources */,
 				884C7E8524028AAE00BA95E3 /* Assets.xcassets in Resources */,
 				884C7E8324028AAB00BA95E3 /* Main.storyboard in Resources */,
 			);
@@ -213,6 +219,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		884C7E932402ED9800BA95E3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				884C7E922402ED9800BA95E3 /* en */,
+				884C7E942402EDAD00BA95E3 /* cs */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -221,6 +236,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APP_VERSION = 0.1.0;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -282,6 +298,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APP_VERSION = 0.1.0;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
