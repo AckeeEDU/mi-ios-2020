@@ -3,6 +3,8 @@ import Foundation
 import UIKit
 import PlaygroundSupport
 
+// apiary: https://cookbook3.docs.apiary.io/#
+
 //let empty = Empty<Int, Error>()
 //
 //let fail = Fail<Int, CustomError>(error: CustomError())
