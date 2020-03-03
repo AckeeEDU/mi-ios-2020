@@ -117,5 +117,29 @@ final class RecipesViewController: UITableViewController {
     }
 }
 
-let recipesVC = RecipesViewController()
-PlaygroundPage.current.liveView = UINavigationController(rootViewController: recipesVC)
+final class RecipeDetailViewController: UIViewController {
+    private weak var descriptionLabel: UILabel!
+    
+    // MARK: - View life cycle
+    
+    override func loadView() {
+        super.loadView()
+        
+        view.backgroundColor = .systemBackground
+        
+        let descriptionLabel = UILabel()
+        descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(descriptionLabel)
+        NSLayoutConstraint.activate([
+            descriptionLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            descriptionLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            descriptionLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+        ])
+        self.descriptionLabel = descriptionLabel
+    }
+}
+
+
+
+//let recipesVC = RecipesViewController()
+PlaygroundPage.current.liveView = UINavigationController(rootViewController: RecipeDetailViewController())
