@@ -1,0 +1,20 @@
+PODS:
+  - ACKLocalization (0.3.3)
+  - SwiftGen (6.1.0)
+
+DEPENDENCIES:
+  - ACKLocalization (~> 0.1)
+  - SwiftGen (~> 6.0)
+
+SPEC REPOS:
+  trunk:
+    - ACKLocalization
+    - SwiftGen
+
+SPEC CHECKSUMS:
+  ACKLocalization: d24a1ba1a31ec153ba9ab2dca5a38d653863214e
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
+
+PODFILE CHECKSUM: aca1c909832ab03ff6fe3e3d4e6a3d01f889d64f
+
+COCOAPODS: 1.8.4

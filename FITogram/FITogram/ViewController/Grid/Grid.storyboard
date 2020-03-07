@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VwJ-L8-uue">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Grid-->
+        <scene sceneID="Sfc-II-C1M">
+            <objects>
+                <viewController id="VwJ-L8-uue" customClass="GridViewController" customModule="FITogram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="twH-Pf-ws5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UbR-SK-crK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" name="background"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="arl-DK-qh7">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UbR-SK-crK" firstAttribute="leading" secondItem="op8-AU-yFc" secondAttribute="leading" id="0hh-29-rIr"/>
+                            <constraint firstItem="op8-AU-yFc" firstAttribute="trailing" secondItem="UbR-SK-crK" secondAttribute="trailing" id="5T4-lm-BMc"/>
+                            <constraint firstItem="op8-AU-yFc" firstAttribute="bottom" secondItem="UbR-SK-crK" secondAttribute="bottom" id="VU2-Zs-hD2"/>
+                            <constraint firstItem="UbR-SK-crK" firstAttribute="top" secondItem="op8-AU-yFc" secondAttribute="top" id="eJa-gC-wTH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="op8-AU-yFc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Grid" image="grid-tab-bar-icon" selectedImage="grid-tab-bar-icon-selected" id="qVL-7Z-swV"/>
+                    <navigationItem key="navigationItem" id="O5s-uL-kp2" customClass="FITNavigationItem" customModule="FITogram" customModuleProvider="target"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="collectionView" destination="UbR-SK-crK" id="S17-0z-JUF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4M1-2F-Wr4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="294" y="204"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="grid-tab-bar-icon" width="24" height="24"/>
+        <image name="grid-tab-bar-icon-selected" width="24" height="24"/>
+        <namedColor name="background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
