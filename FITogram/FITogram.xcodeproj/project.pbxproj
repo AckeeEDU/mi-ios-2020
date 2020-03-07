@@ -30,8 +30,6 @@
 		EF9AE65424129A77001F8320 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE61924129A76001F8320 /* AppDelegate.swift */; };
 		EF9AE65624129A77001F8320 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE61D24129A77001F8320 /* UIColor.swift */; };
 		EF9AE65724129A77001F8320 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE61E24129A77001F8320 /* UIImage.swift */; };
-		EF9AE65824129A77001F8320 /* MendeluNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE62024129A77001F8320 /* MendeluNavigationController.swift */; };
-		EF9AE65924129A77001F8320 /* MendeluNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE62124129A77001F8320 /* MendeluNavigationItem.swift */; };
 		EF9AE65A24129A77001F8320 /* NibNameIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE62324129A77001F8320 /* NibNameIdentifiable.swift */; };
 		EF9AE65B24129A77001F8320 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE62524129A77001F8320 /* Comment.swift */; };
 		EF9AE65C24129A77001F8320 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE62624129A77001F8320 /* Author.swift */; };
@@ -61,6 +59,8 @@
 		EF9AE67424129A77001F8320 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE64E24129A77001F8320 /* MainTabBarViewController.swift */; };
 		EF9AE67524129A77001F8320 /* Grid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9AE65024129A77001F8320 /* Grid.storyboard */; };
 		EF9AE67624129A77001F8320 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE65124129A77001F8320 /* GridViewController.swift */; };
+		EF9AE67D2413E345001F8320 /* FITNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE67B2413E344001F8320 /* FITNavigationItem.swift */; };
+		EF9AE67E2413E345001F8320 /* FITNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE67C2413E345001F8320 /* FITNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,8 +80,6 @@
 		EF9AE61924129A76001F8320 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF9AE61D24129A77001F8320 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		EF9AE61E24129A77001F8320 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
-		EF9AE62024129A77001F8320 /* MendeluNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MendeluNavigationController.swift; sourceTree = "<group>"; };
-		EF9AE62124129A77001F8320 /* MendeluNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MendeluNavigationItem.swift; sourceTree = "<group>"; };
 		EF9AE62324129A77001F8320 /* NibNameIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibNameIdentifiable.swift; sourceTree = "<group>"; };
 		EF9AE62524129A77001F8320 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		EF9AE62624129A77001F8320 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
@@ -111,6 +109,8 @@
 		EF9AE64E24129A77001F8320 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		EF9AE65024129A77001F8320 /* Grid.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Grid.storyboard; sourceTree = "<group>"; };
 		EF9AE65124129A77001F8320 /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		EF9AE67B2413E344001F8320 /* FITNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FITNavigationItem.swift; sourceTree = "<group>"; };
+		EF9AE67C2413E345001F8320 /* FITNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FITNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,8 +220,8 @@
 		EF9AE61F24129A77001F8320 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				EF9AE62024129A77001F8320 /* MendeluNavigationController.swift */,
-				EF9AE62124129A77001F8320 /* MendeluNavigationItem.swift */,
+				EF9AE67C2413E345001F8320 /* FITNavigationController.swift */,
+				EF9AE67B2413E344001F8320 /* FITNavigationItem.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -545,6 +545,8 @@
 			files = (
 				EF9AE65D24129A77001F8320 /* Photo.swift in Sources */,
 				EF9AE67224129A77001F8320 /* FeedViewController.swift in Sources */,
+				EF9AE67D2413E345001F8320 /* FITNavigationItem.swift in Sources */,
+				EF9AE67E2413E345001F8320 /* FITNavigationController.swift in Sources */,
 				EF9AE65424129A77001F8320 /* AppDelegate.swift in Sources */,
 				884C7E9D24031F5500BA95E3 /* Strings.swift in Sources */,
 				EF9AE65F24129A77001F8320 /* PhotosService.swift in Sources */,
@@ -569,8 +571,6 @@
 				EF9AE65C24129A77001F8320 /* Author.swift in Sources */,
 				EF9AE66624129A77001F8320 /* PhotoTableViewCell.swift in Sources */,
 				EF9AE65624129A77001F8320 /* UIColor.swift in Sources */,
-				EF9AE65824129A77001F8320 /* MendeluNavigationController.swift in Sources */,
-				EF9AE65924129A77001F8320 /* MendeluNavigationItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
