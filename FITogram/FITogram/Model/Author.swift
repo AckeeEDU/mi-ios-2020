@@ -14,11 +14,3 @@ struct Author {
     let avatarId: String
 
 }
-
-extension Author: AuthorViewModeling {
-
-    var avatar: UIImage {
-        return UIImage(avatarId: avatarId)
-    }
-
-}

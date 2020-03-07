@@ -30,8 +30,6 @@
 		EF9AE65424129A77001F8320 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE61924129A76001F8320 /* AppDelegate.swift */; };
 		EF9AE65624129A77001F8320 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE61D24129A77001F8320 /* UIColor.swift */; };
 		EF9AE65724129A77001F8320 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE61E24129A77001F8320 /* UIImage.swift */; };
-		EF9AE65824129A77001F8320 /* MendeluNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE62024129A77001F8320 /* MendeluNavigationController.swift */; };
-		EF9AE65924129A77001F8320 /* MendeluNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE62124129A77001F8320 /* MendeluNavigationItem.swift */; };
 		EF9AE65A24129A77001F8320 /* NibNameIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE62324129A77001F8320 /* NibNameIdentifiable.swift */; };
 		EF9AE65B24129A77001F8320 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE62524129A77001F8320 /* Comment.swift */; };
 		EF9AE65C24129A77001F8320 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE62624129A77001F8320 /* Author.swift */; };
@@ -46,13 +44,6 @@
 		EF9AE66524129A77001F8320 /* PhotoDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF9AE63424129A77001F8320 /* PhotoDescriptionTableViewCell.xib */; };
 		EF9AE66624129A77001F8320 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE63624129A77001F8320 /* PhotoTableViewCell.swift */; };
 		EF9AE66724129A77001F8320 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF9AE63724129A77001F8320 /* PhotoTableViewCell.xib */; };
-		EF9AE66824129A77001F8320 /* CommentViewModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE63A24129A77001F8320 /* CommentViewModeling.swift */; };
-		EF9AE66924129A77001F8320 /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE63B24129A77001F8320 /* CommentViewModel.swift */; };
-		EF9AE66A24129A77001F8320 /* AuthorViewModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE63D24129A77001F8320 /* AuthorViewModeling.swift */; };
-		EF9AE66B24129A77001F8320 /* PhotosCollectionViewModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE63F24129A77001F8320 /* PhotosCollectionViewModeling.swift */; };
-		EF9AE66C24129A77001F8320 /* PhotosCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE64024129A77001F8320 /* PhotosCollectionViewModel.swift */; };
-		EF9AE66D24129A77001F8320 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE64224129A77001F8320 /* PhotoViewModel.swift */; };
-		EF9AE66E24129A77001F8320 /* PhotoViewModeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE64324129A77001F8320 /* PhotoViewModeling.swift */; };
 		EF9AE66F24129A77001F8320 /* PhotoDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9AE64624129A77001F8320 /* PhotoDetail.storyboard */; };
 		EF9AE67024129A77001F8320 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE64724129A77001F8320 /* PhotoDetailViewController.swift */; };
 		EF9AE67124129A77001F8320 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9AE64924129A77001F8320 /* Feed.storyboard */; };
@@ -61,6 +52,8 @@
 		EF9AE67424129A77001F8320 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE64E24129A77001F8320 /* MainTabBarViewController.swift */; };
 		EF9AE67524129A77001F8320 /* Grid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9AE65024129A77001F8320 /* Grid.storyboard */; };
 		EF9AE67624129A77001F8320 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE65124129A77001F8320 /* GridViewController.swift */; };
+		EF9AE6792413E2A2001F8320 /* FITNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE6772413E2A2001F8320 /* FITNavigationItem.swift */; };
+		EF9AE67A2413E2A2001F8320 /* FITNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AE6782413E2A2001F8320 /* FITNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,8 +73,6 @@
 		EF9AE61924129A76001F8320 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF9AE61D24129A77001F8320 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		EF9AE61E24129A77001F8320 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
-		EF9AE62024129A77001F8320 /* MendeluNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MendeluNavigationController.swift; sourceTree = "<group>"; };
-		EF9AE62124129A77001F8320 /* MendeluNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MendeluNavigationItem.swift; sourceTree = "<group>"; };
 		EF9AE62324129A77001F8320 /* NibNameIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibNameIdentifiable.swift; sourceTree = "<group>"; };
 		EF9AE62524129A77001F8320 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		EF9AE62624129A77001F8320 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
@@ -96,13 +87,6 @@
 		EF9AE63424129A77001F8320 /* PhotoDescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoDescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		EF9AE63624129A77001F8320 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		EF9AE63724129A77001F8320 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
-		EF9AE63A24129A77001F8320 /* CommentViewModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewModeling.swift; sourceTree = "<group>"; };
-		EF9AE63B24129A77001F8320 /* CommentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
-		EF9AE63D24129A77001F8320 /* AuthorViewModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorViewModeling.swift; sourceTree = "<group>"; };
-		EF9AE63F24129A77001F8320 /* PhotosCollectionViewModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewModeling.swift; sourceTree = "<group>"; };
-		EF9AE64024129A77001F8320 /* PhotosCollectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewModel.swift; sourceTree = "<group>"; };
-		EF9AE64224129A77001F8320 /* PhotoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
-		EF9AE64324129A77001F8320 /* PhotoViewModeling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewModeling.swift; sourceTree = "<group>"; };
 		EF9AE64624129A77001F8320 /* PhotoDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoDetail.storyboard; sourceTree = "<group>"; };
 		EF9AE64724129A77001F8320 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		EF9AE64924129A77001F8320 /* Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
@@ -111,6 +95,8 @@
 		EF9AE64E24129A77001F8320 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		EF9AE65024129A77001F8320 /* Grid.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Grid.storyboard; sourceTree = "<group>"; };
 		EF9AE65124129A77001F8320 /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		EF9AE6772413E2A2001F8320 /* FITNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FITNavigationItem.swift; sourceTree = "<group>"; };
+		EF9AE6782413E2A2001F8320 /* FITNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FITNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +157,6 @@
 				EF9AE61B24129A77001F8320 /* Shared */,
 				EF9AE62424129A77001F8320 /* Model */,
 				EF9AE62824129A77001F8320 /* Service */,
-				EF9AE63824129A77001F8320 /* ViewModel */,
 				EF9AE64424129A77001F8320 /* ViewController */,
 				EF9AE62B24129A77001F8320 /* View */,
 			);
@@ -220,8 +205,8 @@
 		EF9AE61F24129A77001F8320 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				EF9AE62024129A77001F8320 /* MendeluNavigationController.swift */,
-				EF9AE62124129A77001F8320 /* MendeluNavigationItem.swift */,
+				EF9AE6782413E2A2001F8320 /* FITNavigationController.swift */,
+				EF9AE6772413E2A2001F8320 /* FITNavigationItem.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -300,59 +285,13 @@
 			path = Photo;
 			sourceTree = "<group>";
 		};
-		EF9AE63824129A77001F8320 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				EF9AE63924129A77001F8320 /* Comment */,
-				EF9AE63C24129A77001F8320 /* Author */,
-				EF9AE63E24129A77001F8320 /* PhotosCollection */,
-				EF9AE64124129A77001F8320 /* Photo */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		EF9AE63924129A77001F8320 /* Comment */ = {
-			isa = PBXGroup;
-			children = (
-				EF9AE63A24129A77001F8320 /* CommentViewModeling.swift */,
-				EF9AE63B24129A77001F8320 /* CommentViewModel.swift */,
-			);
-			path = Comment;
-			sourceTree = "<group>";
-		};
-		EF9AE63C24129A77001F8320 /* Author */ = {
-			isa = PBXGroup;
-			children = (
-				EF9AE63D24129A77001F8320 /* AuthorViewModeling.swift */,
-			);
-			path = Author;
-			sourceTree = "<group>";
-		};
-		EF9AE63E24129A77001F8320 /* PhotosCollection */ = {
-			isa = PBXGroup;
-			children = (
-				EF9AE63F24129A77001F8320 /* PhotosCollectionViewModeling.swift */,
-				EF9AE64024129A77001F8320 /* PhotosCollectionViewModel.swift */,
-			);
-			path = PhotosCollection;
-			sourceTree = "<group>";
-		};
-		EF9AE64124129A77001F8320 /* Photo */ = {
-			isa = PBXGroup;
-			children = (
-				EF9AE64224129A77001F8320 /* PhotoViewModel.swift */,
-				EF9AE64324129A77001F8320 /* PhotoViewModeling.swift */,
-			);
-			path = Photo;
-			sourceTree = "<group>";
-		};
 		EF9AE64424129A77001F8320 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				EF9AE64524129A77001F8320 /* Detail */,
-				EF9AE64824129A77001F8320 /* Feed */,
 				EF9AE64B24129A77001F8320 /* MainTabBar */,
+				EF9AE64824129A77001F8320 /* Feed */,
 				EF9AE64F24129A77001F8320 /* Grid */,
+				EF9AE64524129A77001F8320 /* Detail */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -360,8 +299,8 @@
 		EF9AE64524129A77001F8320 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				EF9AE64624129A77001F8320 /* PhotoDetail.storyboard */,
 				EF9AE64724129A77001F8320 /* PhotoDetailViewController.swift */,
+				EF9AE64624129A77001F8320 /* PhotoDetail.storyboard */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -548,29 +487,22 @@
 				EF9AE65424129A77001F8320 /* AppDelegate.swift in Sources */,
 				884C7E9D24031F5500BA95E3 /* Strings.swift in Sources */,
 				EF9AE65F24129A77001F8320 /* PhotosService.swift in Sources */,
-				EF9AE66E24129A77001F8320 /* PhotoViewModeling.swift in Sources */,
-				EF9AE66C24129A77001F8320 /* PhotosCollectionViewModel.swift in Sources */,
 				EF9AE65A24129A77001F8320 /* NibNameIdentifiable.swift in Sources */,
 				EF9AE65724129A77001F8320 /* UIImage.swift in Sources */,
 				EF9AE66024129A77001F8320 /* CommentTableViewCell.swift in Sources */,
 				EF9AE67624129A77001F8320 /* GridViewController.swift in Sources */,
-				EF9AE66B24129A77001F8320 /* PhotosCollectionViewModeling.swift in Sources */,
-				EF9AE66924129A77001F8320 /* CommentViewModel.swift in Sources */,
 				EF9AE65E24129A77001F8320 /* PhotoServicing.swift in Sources */,
+				EF9AE67A2413E2A2001F8320 /* FITNavigationController.swift in Sources */,
 				EF9AE66324129A77001F8320 /* PhotoCollectionViewCell.swift in Sources */,
-				EF9AE66D24129A77001F8320 /* PhotoViewModel.swift in Sources */,
-				EF9AE66824129A77001F8320 /* CommentViewModeling.swift in Sources */,
 				EF9AE67424129A77001F8320 /* MainTabBarViewController.swift in Sources */,
 				EF9AE65B24129A77001F8320 /* Comment.swift in Sources */,
 				EF9AE66424129A77001F8320 /* PhotoDescriptionTableViewCell.swift in Sources */,
 				EF9AE67024129A77001F8320 /* PhotoDetailViewController.swift in Sources */,
 				884C7E7E24028AAB00BA95E3 /* SceneDelegate.swift in Sources */,
-				EF9AE66A24129A77001F8320 /* AuthorViewModeling.swift in Sources */,
+				EF9AE6792413E2A2001F8320 /* FITNavigationItem.swift in Sources */,
 				EF9AE65C24129A77001F8320 /* Author.swift in Sources */,
 				EF9AE66624129A77001F8320 /* PhotoTableViewCell.swift in Sources */,
 				EF9AE65624129A77001F8320 /* UIColor.swift in Sources */,
-				EF9AE65824129A77001F8320 /* MendeluNavigationController.swift in Sources */,
-				EF9AE65924129A77001F8320 /* MendeluNavigationItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,15 +34,3 @@ class PhotoDescriptionTableViewCell: UITableViewCell, NibNameIdentifiable {
     }
     
 }
-
-extension PhotoDescriptionTableViewCell {
-
-    func configure(with viewModel: PhotoViewModeling) {
-        configure(with: PhotoDescriptionTableViewCell.Input(
-            likesCount: viewModel.likesCount,
-            username: viewModel.author.username,
-            description: viewModel.description
-        ))
-    }
-
-}

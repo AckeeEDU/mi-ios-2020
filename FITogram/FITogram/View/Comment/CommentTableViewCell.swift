@@ -36,18 +36,6 @@ class CommentTableViewCell: UITableViewCell, NibNameIdentifiable {
     
 }
 
-extension CommentTableViewCell {
-
-    func configure(with viewModel: CommentViewModeling) {
-        configure(with: CommentTableViewCell.Input(
-            avatar: viewModel.author.avatar,
-            username: viewModel.author.username,
-            comment: viewModel.text
-        ))
-    }
-
-}
-
 private extension CommentTableViewCell {
 
     func setup() {

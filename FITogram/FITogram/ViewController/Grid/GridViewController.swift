@@ -9,7 +9,8 @@ import UIKit
 
 class GridViewController: UIViewController {
 
-    private let viewModel = PhotosCollectionViewModel()
+    // 💩 GridViewController musí držet lokální kopii dat
+    private var photos = [Photo]()
 
     @IBOutlet private weak var collectionView: UICollectionView!
 
@@ -18,14 +19,15 @@ class GridViewController: UIViewController {
 
         setup()
 
-        viewModel.didUpdatePhotos = { [weak self] in
+        // 💩 duplicitní kód z FeedViewController
+        // 💩 GridViewController zná konkrétní implementaci photoService (model vrstva)
+        PhotosService.shared.fetchPhotos { [weak self] photos in
+            self?.photos = photos
             self?.collectionView.reloadData()
         }
-        viewModel.updatePhotos()
     }
 
 }
-
 private extension GridViewController {
 
     func setup() {
@@ -47,13 +49,18 @@ private extension GridViewController {
 extension GridViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.numberOfPhotos()
+        return photos.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let photo = viewModel.photo(at: indexPath.item)
+        let photo = photos[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotoCollectionViewCell.identifier, for: indexPath) as! PhotoCollectionViewCell
-        cell.configure(with: photo)
+        cell.configure(
+            with: PhotoCollectionViewCell.Input(
+                // 💩 GridViewController musí umět přetavit photoId na UIImage
+                photo: UIImage(photoId: photo.photoId)
+            )
+        )
         return cell
     }
 
@@ -67,7 +74,7 @@ extension GridViewController: UICollectionViewDelegate {
         let storyboard = UIStoryboard(name: "PhotoDetail", bundle: nil)
         let viewController = storyboard.instantiateInitialViewController() as! PhotoDetailViewController
         viewController.hidesBottomBarWhenPushed = true
-        viewController.viewModel = viewModel.photo(at: indexPath.item)
+        viewController.photo = photos[indexPath.row]
         // 💩 GridViewController předpokládá, že je uvnitř UINavigationController
         navigationController?.pushViewController(viewController, animated: true)
     }

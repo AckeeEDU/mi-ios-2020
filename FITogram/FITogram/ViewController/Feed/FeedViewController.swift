@@ -9,7 +9,8 @@ import UIKit
 
 class FeedViewController: UIViewController {
 
-    private let viewModel = PhotosCollectionViewModel()
+    // 💩 FeedViewController musí držet lokální kopii dat
+    private var photos = [Photo]()
 
     @IBOutlet private weak var tableView: UITableView!
 
@@ -18,10 +19,12 @@ class FeedViewController: UIViewController {
 
         setup()
 
-        viewModel.didUpdatePhotos = { [weak self] in
+        // 💩 duplicitní kód z GridViewController
+        // 💩 FeedViewController zná konkrétní implementaci photoService (model vrstva)
+        PhotosService.shared.fetchPhotos { [weak self] photos in
+            self?.photos = photos
             self?.tableView.reloadData()
         }
-        viewModel.updatePhotos()
     }
 
 }
@@ -40,13 +43,21 @@ private extension FeedViewController {
 extension FeedViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.numberOfPhotos()
+        return photos.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let photo = viewModel.photo(at: indexPath.row)
+        let photo = photos[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: PhotoTableViewCell.identifier, for: indexPath) as! PhotoTableViewCell
-        cell.configure(with: photo)
+        cell.configure(
+            // 💩 FeedViewController musí umět přetavit Photo na Input pro PhotoTableViewCell
+            with: PhotoTableViewCell.Input(
+                avatar: UIImage(avatarId: photo.author.avatarId),
+                authorName: photo.author.name,
+                locationName: photo.locationName,
+                photo: UIImage(photoId: photo.photoId)
+            )
+        )
         return cell
     }
 
@@ -60,7 +71,7 @@ extension FeedViewController: UITableViewDelegate {
         let storyboard = UIStoryboard(name: "PhotoDetail", bundle: nil)
         let viewController = storyboard.instantiateInitialViewController() as! PhotoDetailViewController
         viewController.hidesBottomBarWhenPushed = true
-        viewController.viewModel = viewModel.photo(at: indexPath.row)
+        viewController.photo = photos[indexPath.row]
         // 💩 FeedViewController předpokládá, že je uvnitř UINavigationController
         navigationController?.pushViewController(viewController, animated: true)
     }

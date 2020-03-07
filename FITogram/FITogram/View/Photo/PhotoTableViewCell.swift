@@ -37,19 +37,6 @@ class PhotoTableViewCell: UITableViewCell, NibNameIdentifiable {
 
 }
 
-extension PhotoTableViewCell {
-
-    func configure(with viewModel: PhotoViewModeling) {
-        configure(with: PhotoTableViewCell.Input(
-            avatar: viewModel.author.avatar,
-            authorName: viewModel.author.name,
-            locationName: viewModel.locationName,
-            photo: viewModel.photo
-        ))
-    }
-
-}
-
 private extension PhotoTableViewCell {
 
     func setup() {
