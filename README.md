@@ -33,3 +33,6 @@ branch: `03-combine`
 * Type erasure
 * Networking
 * UI bindings
+
+## 04 - MVVM
+branch: `04-mvvm`
